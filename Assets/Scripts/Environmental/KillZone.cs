@@ -4,7 +4,7 @@ public class KillZone : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.tag == "Player")
         {
             Debug.Log("Inside KillZone Check");
             PlayerRespawn re = other.GetComponent<PlayerRespawn>();
