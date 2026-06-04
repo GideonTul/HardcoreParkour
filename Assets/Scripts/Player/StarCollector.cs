@@ -22,5 +22,9 @@ public class StarCollector : MonoBehaviour
                 SceneManager.LoadScene(NxtLvl);
             }
         }
+        else if (other.tag == "Pizza")
+        {
+            SceneManager.LoadScene(NxtLvl);
+        }
     }
 }
