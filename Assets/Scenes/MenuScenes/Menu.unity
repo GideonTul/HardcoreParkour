@@ -529,6 +529,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238354156}
   m_CullTransparentMesh: 1
+--- !u!1 &377770093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377770095}
+  - component: {fileID: 377770094}
+  m_Layer: 0
+  m_Name: SceneMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &377770094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377770093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbb62bb5bae33243a26fff0aba236e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneMusic
+  music: {fileID: 8300000, guid: 8c60acb9945165a4cb824c858a5a17cb, type: 3}
+--- !u!4 &377770095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377770093}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.9157715, y: 0, z: 5.7546387}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487354098
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +743,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   musicSource: {fileID: 661402568}
   mixerGroup: {fileID: 7541985029793878474, guid: a6162e45ccabd244f8ccba5c6b29c83a, type: 2}
+  Menu: {fileID: 8300000, guid: 8c60acb9945165a4cb824c858a5a17cb, type: 3}
+  Level2: {fileID: 8300000, guid: d24cc867aa217f74eb9abc0176545f9d, type: 3}
+  Level3: {fileID: 0}
 --- !u!4 &661402567
 Transform:
   m_ObjectHideFlags: 0
@@ -724,7 +772,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 8c60acb9945165a4cb824c858a5a17cb, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1755,3 +1803,4 @@ SceneRoots:
   - {fileID: 1345454978}
   - {fileID: 661402567}
   - {fileID: 1016605756}
+  - {fileID: 377770095}

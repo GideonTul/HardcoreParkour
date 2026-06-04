@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
-
     public AudioSource musicSource;
     public AudioMixerGroup mixerGroup; // Optional: Assign your Music Mixer Group here
+
+    public AudioClip Menu;
+    public AudioClip Level2;
+    public AudioClip Level3;
 
     void Awake()
     {
@@ -37,10 +40,19 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    // Optional: Change music based on scene
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Example logic: Play specific track for specific scenes
-        // if (scene.name == "Level1") PlayMusic(level1Track);
+        if (scene.name == "Menu") PlayMusic(Menu);
+        else if (scene.name == "Level2") PlayMusic(Level2);
+    }
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
