@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Level2;
     public AudioClip Level3;
 
+
     void Awake()
     {
         // Singleton Pattern: Check if an instance already exists
