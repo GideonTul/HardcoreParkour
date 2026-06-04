@@ -744,8 +744,8 @@ MonoBehaviour:
   musicSource: {fileID: 661402568}
   mixerGroup: {fileID: 7541985029793878474, guid: a6162e45ccabd244f8ccba5c6b29c83a, type: 2}
   Menu: {fileID: 8300000, guid: 8c60acb9945165a4cb824c858a5a17cb, type: 3}
-  Level2: {fileID: 8300000, guid: d24cc867aa217f74eb9abc0176545f9d, type: 3}
-  Level3: {fileID: 0}
+  Level2: {fileID: 0}
+  Level3: {fileID: 8300000, guid: d24cc867aa217f74eb9abc0176545f9d, type: 3}
 --- !u!4 &661402567
 Transform:
   m_ObjectHideFlags: 0

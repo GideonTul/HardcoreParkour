@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Menu") PlayMusic(Menu);
-        else if (scene.name == "Level2") PlayMusic(Level2);
+        else if (scene.name == "LevelThreeAnim") PlayMusic(Level2);
     }
     void OnEnable()
     {

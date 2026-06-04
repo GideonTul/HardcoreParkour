@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+// using UnityEngine.Windows;
 
 public class MenuButtons : MonoBehaviour
 {
@@ -36,6 +37,13 @@ public class MenuButtons : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             LoadMainMenu();
+        }
+        if (SceneManager.GetActiveScene().name == "LevelThreeAnim")
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                SceneManager.LoadScene("LevelThree");
+            }
         }
     }
 }
