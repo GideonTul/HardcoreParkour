@@ -1883,6 +1883,10 @@ PrefabInstance:
       value: NestedParentArmature_Unpack
       objectReference: {fileID: 0}
     - target: {fileID: 7541637707631559874, guid: b0e27a05cc1787f4a88bc69ec844ffea, type: 3}
+      propertyPath: NxtLvl
+      value: LevelThree
+      objectReference: {fileID: 0}
+    - target: {fileID: 7541637707631559874, guid: b0e27a05cc1787f4a88bc69ec844ffea, type: 3}
       propertyPath: StarText
       value: 
       objectReference: {fileID: 783878091}
