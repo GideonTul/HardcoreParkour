@@ -15,7 +15,6 @@ public class VolumeSlider : MonoBehaviour
         SetVolume(savedVol);
         slider.value = savedVol;
 
-        // Listen for slider changes
         slider.onValueChanged.AddListener((float _) => SetVolume(_));
     }
 

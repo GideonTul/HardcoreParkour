@@ -15,17 +15,15 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton Pattern: Check if an instance already exists
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // Destroy duplicate
+            Destroy(gameObject); 
             return;
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); // Persist across scenes
+        DontDestroyOnLoad(gameObject);
 
-        // Optional: Assign mixer group if not set in Inspector
         if (mixerGroup != null)
         {
             musicSource.outputAudioMixerGroup = mixerGroup;
